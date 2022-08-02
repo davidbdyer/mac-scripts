@@ -1,0 +1,1 @@
+do shell script "pbcopy < ~/.ssh/id_rsa.pub"
