@@ -1,0 +1,30 @@
+#!/bin/bash
+mkdir css \
+scripts \
+images \
+sass \
+sass/abstracts \
+sass/base \
+sass/components \
+sass/layout \
+sass/pages && \
+touch index.html \
+.prettierrc \
+scripts/script.js \
+sass/style.scss \
+sass/abstracts/_index.scss \
+sass/base/_index.scss \
+sass/components/_index.scss \
+sass/layout/_index.scss \
+sass/pages/_index.scss && \
+echo -e "@use 'base'; \n\
+@use 'components'; \n\
+@use 'layout'; \n\
+@use 'pages';"\
+ >> sass/style.scss && \
+echo -e '<!DOCTYPE html>\n<html lang="en">\n\n<head>\n\t<meta charset="UTF-8">\n\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\t<title>Project Starter</title>\n\n\t<link rel="stylesheet" href="css/style.css">\n\n\t<script src="scripts/script.js" defer></script>\n</head>\n\n<body>\n\t<h1>Project Starter</h1>\n\n</body>\n\n</html>\n' >> index.html &&
+echo -e '{\n\t"proseWrap": "preserve",\n\t"bracketSameLine": true,\n\t"singleQuote": true,\n\t"endOfLine": "lf",\n\t"printWidth": 200,\n\t"order": "smacss",\n\t"tabWidth": 2,\n\t"useTabs": true\n}\n' >> .prettierrc
+
+# bash script for creating site struture in folder using html, sass, and javascript.
+# I put the script in my /usr/local/bin folder.
+# script must have execute permissions I used chmod +X on the script.

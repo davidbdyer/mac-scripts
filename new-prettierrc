@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ ! -f ./.prettierrc ]
+then
+  touch .prettierrc && \
+  echo -e '{
+    "proseWrap": "preserve",
+    "bracketSameLine": true,
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "printWidth": 200,
+    "order": "smacss",
+    "tabWidth": 2,
+    "useTabs": true
+  }' >> .prettierrc &&
+  echo 'File Created!'
+else
+	echo 'File Already Exists!'
+fi
+
+# bash script for creating prettier config file folder with my default settings.
+# I put the script in my /usr/local/bin folder.
+# script must have execute permissions I used chmod +X on the script.
