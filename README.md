@@ -11,5 +11,7 @@ Mac OS comes with an app called Script Editor. Script Editor is required to run 
 Some of the bash aliases require additional software like youtube-dl. I use the bash scripts by making them executable and putting them in a folder within my path.
 
 ### Raycast
-Some of the scripts are set up to work with Raycast. Raycast works with many languages, including AppleScript and Bash..
+Some of the scripts are set up to work with Raycast. Raycast works with many languages, including AppleScript and Bash.
 
+### Services
+These files go in your ~/Library/Services, then in System Preferences > Keyboard > Shortcuts, you can assign a global keyboard shortcut and toggle if they appear in the Services contextual menu. For example "New Terminal at Folder" I use "ctrl + ~". You can also add them to the Quick Actions contextual menu in System Preferences >  Extensions >  Finder. To edit open them with Automator.
