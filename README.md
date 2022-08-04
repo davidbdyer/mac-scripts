@@ -1,6 +1,6 @@
 # mac-scripts
 
-## Scripts I've made for Mac OS over the years I've found useful.
+## Scripts I've made for Mac OS over the years found useful.
 
 The scripts in this repository are created to work on Mac OS.
 
