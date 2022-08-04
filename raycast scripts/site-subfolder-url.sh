@@ -17,14 +17,23 @@ path=$(osascript <<'EOF'
     tell application "Finder"
         if exists Finder window 1 then
             get the POSIX path of (target of Finder window 1 as alias)
-        else
-            get the POSIX path of (desktop as alias)
         end if
     end tell
 EOF
 )
 
-urlStart=$(echo "http://localhost/~david/")
-urlEnd=$(echo $path | tr -d '\n' | cut -c20-)
-echo $urlStart$urlEnd | pbcopy
-echo "Copied $urlStart$urlEnd to clipboard"
+users="/Users/"
+currentUser=$(whoami)
+sites="/Sites/"
+checkPath=$users$currentUser$sites*
+
+if [[ $path == $checkPath ]]; then
+
+    urlStart=$(echo "http://localhost/~david/")
+    urlEnd=$(echo $path | tr -d '\n' | cut -c20-)
+    echo $urlStart$urlEnd | pbcopy
+    echo "Copied $urlStart$urlEnd to clipboard"
+else
+    echo "Finder window outside of sites folder."
+    echo "Copied $urlStart to clipboard"
+fi
