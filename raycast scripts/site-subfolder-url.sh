@@ -33,6 +33,7 @@ if [[ $path == $checkPath ]]; then
     urlEnd=$(echo $path | tr -d '\n' | cut -c20-)
     echo $urlStart$urlEnd | pbcopy
     echo "Copied $urlStart$urlEnd to clipboard"
+    open $urlStart$urlEnd 
 else
     echo "Finder window outside of sites folder."
     echo "Copied $urlStart to clipboard"
