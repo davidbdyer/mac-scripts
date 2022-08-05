@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ ! -f ./.gitignore ]; then
+  touch .gitignore &&
+    echo -e '.DS_Store
+prepros.config
+.prettierrc
+.nova/
+.vscode/
+node_modules/
+' >>.gitignore &&
+    echo 'File Created!'
+else
+  echo 'File Already Exists!'
+fi
+
+# bash script for creating a gitignore file with my default settings.
+# I put the script in my /usr/local/bin folder.
+# script must have execute permissions I used chmod +x on the script.

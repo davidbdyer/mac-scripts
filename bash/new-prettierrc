@@ -20,4 +20,4 @@ fi
 
 # bash script for creating prettier config file folder with my default settings.
 # I put the script in my /usr/local/bin folder.
-# script must have execute permissions I used chmod +X on the script.
+# script must have execute permissions I used chmod +x on the script.

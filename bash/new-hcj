@@ -11,4 +11,4 @@ echo -e '{\n\t"proseWrap": "preserve",\n\t"bracketSameLine": true,\n\t"singleQuo
 
 # bash script for creating site struture in folder using html, css, and javascript.
 # I put the script in my /usr/local/bin folder.
-# script must have execute permissions I used chmod +X on the script.
+# script must have execute permissions I used chmod +x on the script.
