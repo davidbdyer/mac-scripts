@@ -1,4 +1,4 @@
-set userName to "username"
+set userName to (do shell script "whoami")
 set userPassword to "password"
 set siteFolder to (do shell script "whoami")
 

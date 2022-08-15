@@ -1,4 +1,4 @@
-set userName to "username"
+set userName to (do shell script "whoami")
 set userPassword to "password"
 
 set readResult to do shell script "sudo launchctl list | grep apache | awk '{print $3}'" user name userName password userPassword with administrator privileges

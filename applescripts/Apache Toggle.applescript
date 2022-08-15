@@ -1,4 +1,4 @@
-set userName to "username"
+set userName to (do shell script "whoami")
 set userPassword to "password"
 
 do shell script "read=`sudo launchctl list | grep apache | awk '{print $3}'`

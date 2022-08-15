@@ -1,4 +1,4 @@
-set userName to "username"
+set userName to (do shell script "whoami")
 set userPassword to "password"
 
 display dialog "Search" default answer "" buttons {"Cancel", "Search"} default button "Search"
