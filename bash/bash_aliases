@@ -19,22 +19,26 @@ alias lasd='ls -A /'
 
 alias grep='grep -i --color=auto'
 
+# applescript menu item
+alias script-menu='open "/System/Library/CoreServices/Script Menu.app"'
+
 # network utilities
 alias ping5='ping -c 5 '
+alias ping-goo='ping google.com'
 alias netq='networkQuality -v'
 
-# https://youtube-dl.org/
-alias ytdl='youtube-dl'
-alias cwtv='youtube-dl -o "%(series)s - s%(season_number)se%(episode_number)s - %(title)s.%(ext)s" --all-subs'
-alias ytdl-t='youtube-dl -o "%(title)s.%(ext)s"'
-alias ytdl-audio='youtube-dl -f "bestaudio[ext=m4a]"'
+# https://github.com/yt-dlp/yt-dlp
+alias ytdl='yt-dlp'
+alias cwtv='yt-dlp -o "%(series)s - s%(season_number)se%(episode_number)s - %(title)s.%(ext)s" --all-subs'
+alias ytdl-t='yt-dlp -o "%(title)s.%(ext)s" --all-subs'
+alias ytdl-audio='yt-dlp -f "bestaudio[ext=m4a]"'
 
 # https://brew.sh/
 alias buo='brew update && brew outdated'
 alias bup='brew upgrade'
 
 #node installed with brew
-alias node17='export PATH="/usr/local/opt/node@17/bin:$PATH"'
+alias node18='export PATH="/usr/local/opt/node@18/bin:$PATH"'
 alias node16='export PATH="/usr/local/opt/node@16/bin:$PATH"'
 alias node14='export PATH="/usr/local/opt/node@14/bin:$PATH"'
 
@@ -64,3 +68,4 @@ alias edit-apache='open /etc/apache2/httpd.conf'
 alias restore-apache-permissions='chmod +a "_www allow execute" ~'
 alias code-sign-php='codesign --sign "custom certificate authority" --force --keychain ~/Library/Keychains/login.keychain-db /usr/local/opt/php/lib/httpd/modules/libphp.so'
 # name of custom certificate authority ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+alias restart-apache='apachectl restart'
