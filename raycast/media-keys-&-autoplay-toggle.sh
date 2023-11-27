@@ -2,11 +2,11 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Toggle Media Keys & Autoplay
+# @raycast.title Media Keys & Autoplay Toggle 
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 🤖
+# @raycast.icon ⏯︎
 # @raycast.packageName Automation
 
 # Documentation:

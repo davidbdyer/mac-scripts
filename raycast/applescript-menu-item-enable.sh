@@ -2,12 +2,12 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Enable Applescript Menu Item
+# @raycast.title Applescript Menu Item Enable
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 🤖
 # @raycast.packageName UI Automation
+# @raycast.icon 🤖
 
 # Documentation:
 # @raycast.description Enables Applescript Menu Item
