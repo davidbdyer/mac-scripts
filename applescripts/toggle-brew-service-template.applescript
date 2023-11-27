@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Toggle a service installed by Homebrew on and off.
+
 set serviceName to "mysql"
 set serviceNameForDialog to "MySQL"
 

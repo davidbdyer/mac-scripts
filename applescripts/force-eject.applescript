@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Force Eject a disk.
+
 tell application "Finder" to set diskNames to name of every disk whose name is not in {"vm", "home", "Preboot", "Recovery", "Update"}
 
 set diskToEject to choose from list diskNames with prompt "Select Disk to Force Eject"

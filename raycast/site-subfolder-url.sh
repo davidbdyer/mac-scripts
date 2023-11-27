@@ -12,7 +12,7 @@
 # Documentation:
 # @raycast.description Creates URL for Sites subfolder.
 # @raycast.author David Dyer
-# @raycast.authorURL https://github.com/davidbdyer
+# @raycast.authorURL https://www.daviddyer.me
 
 path=$(osascript <<'EOF'
     tell application "Finder"

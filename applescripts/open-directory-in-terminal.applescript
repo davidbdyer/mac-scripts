@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Open Director in specified terminal.
+
 tell application "Finder"
 	-- Check if there's a selection; works if there's a window open or not.
 	if selection is not {} then

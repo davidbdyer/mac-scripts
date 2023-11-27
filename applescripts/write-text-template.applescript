@@ -1,3 +1,7 @@
+-- author:  David Dyer
+-- authorURL:  https://www.daviddyer.me
+-- description: Automate the writing of text. I usually use it for passwords. That is not a good idea security-wise.
+
 set textString to "asdsfdasdfasfasdfsafa"
 set pauseBetweenCharacters to 0.1
 

@@ -1,6 +1,10 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Enable and disable apache using a GUI. Also ask if you want to open user web page.
+
 set userName to (do shell script "whoami")
 set userPassword to "password"
-set siteFolder to (do shell script "whoami")
+set siteFolder to userName
 
 
 tell application "System Events"

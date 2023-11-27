@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Destructively batch resize a folder of images to specified pixel size.
+
 set rawPath to POSIX path of (choose folder with prompt "Pick the folder containing the files to process:") as string
 set foldePath to quoted form of rawPath
 

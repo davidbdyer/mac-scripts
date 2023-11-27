@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Search for running daemons and agents by name.
+
 set userName to (do shell script "whoami")
 set userPassword to "password"
 

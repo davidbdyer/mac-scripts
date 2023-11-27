@@ -11,8 +11,8 @@
 
 # Documentation:
 # @raycast.description Open directory in Nova.
-# @raycast.author davidbdeath
-# @raycast.authorURL https://github.com/davidbdeath
+# @raycast.author David Dyer
+# @raycast.authorURL https://www.daviddyer.me
 
 tell application "Finder"
 	# Check if there's a selection; works if there's a window open or not.

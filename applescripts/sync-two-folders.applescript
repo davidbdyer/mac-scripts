@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: Sync two folders with rsync with verbose, archive, and copy extended attributes.
+
 set sourceFolder to (choose folder with prompt "Set Source:") as string
 
 set targetFolder to (choose folder with prompt "Set Destination:") as string

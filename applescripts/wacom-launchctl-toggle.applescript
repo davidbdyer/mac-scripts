@@ -1,3 +1,7 @@
+-- author: David Dyer
+-- authorURL: https://www.daviddyer.me
+-- description: this unloads and reloads the wacom drivers.
+
 do shell script "read=`launchctl list | grep wacom`
 
 if 
