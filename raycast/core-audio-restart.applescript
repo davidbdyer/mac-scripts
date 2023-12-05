@@ -5,7 +5,7 @@
 # @raycast.schemaVersion 1
 # @raycast.title Core Audio Restart
 # @raycast.mode silent
-# @raycast.packageName System Utils
+# @raycast.packageName Audio System
 #
 # Optional parameters:
 # @raycast.icon ??

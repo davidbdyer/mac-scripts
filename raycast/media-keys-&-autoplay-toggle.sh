@@ -7,7 +7,7 @@
 
 # Optional parameters:
 # @raycast.icon ⏯︎
-# @raycast.packageName Automation
+# @raycast.packageName UI Tweaks
 
 # Documentation:
 # @raycast.description Disable and enable media keys and autoplay

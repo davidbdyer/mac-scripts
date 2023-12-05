@@ -6,7 +6,7 @@
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.packageName CLI Utils
+# @raycast.packageName Bash
 # @raycast.icon 📝
 
 # Documentation:
@@ -14,5 +14,5 @@
 # @raycast.author davidbdyer
 # @raycast.authorURL https://github.com/davidbdyer
 
-code ~/.bash_aliases
+subl ~/.bash_aliases
 

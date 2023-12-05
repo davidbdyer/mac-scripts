@@ -10,6 +10,7 @@
 
 # Documentation:
 # @raycast.description Mound a SMB share.
+# @raycast.packageName SMB
 # @author David Dyer
 # @authorURL https://www.daviddyer.me
 

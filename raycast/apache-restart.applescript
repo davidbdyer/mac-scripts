@@ -4,11 +4,11 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Apache Restart
-# @raycast.mode silent
+# @raycast.mode compact
 #
 # Optional parameters:
+# @raycast.packageName Apache
 # @raycast.icon ??
-# @raycast.packageName Apache Utils
 #
 # Documentation:
 # @raycast.description Restarts Apache Server
@@ -16,9 +16,11 @@
 # @raycast.authorURL https://www.daviddyer.me
 
 set userName to (do shell script "whoami")
-set userPassword to "password"
+set userPassword to "rockodbot"
 
-tell application "System Events"
+try
 	do shell script "sudo apachectl restart" user name userName password userPassword with administrator privileges
-	display dialog "Apache Restarted" buttons {"OK"} default button 1
-end tell
+	do shell script "echo Apache Restarted"
+on error errorMessage
+	do shell script "echo 'Apache Restart Failed'"
+end try
